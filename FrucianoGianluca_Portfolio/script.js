@@ -1,4 +1,3 @@
-//hey
 document.addEventListener("DOMContentLoaded", function () {
   let btnS = document.getElementById('Ho1');
   let HTML1 = document.getElementById('HTML1');
