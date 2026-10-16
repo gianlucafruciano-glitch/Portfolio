@@ -1,0 +1,375 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    position: relative;
+}
+
+
+/* Mobile override */
+@media screen and (max-width: 500px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Background Website*/
+.bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#bg1 {
+    margin-top: 10px;
+}
+
+
+
+#bg3 {
+    margin-top: -350px;
+}
+
+.bg {
+    width: 100%;
+    height: 955px;
+    /* adjust to your image height */
+    background-image: url(sea.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flipped {
+    transform: scaleY(-1);
+}
+
+/*Blauwe Kleur Text*/
+.blue {
+    color: #03359d;
+}
+
+/*Alles van de Navigatie*/
+.navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    background-color: #03359d;
+    color: white;
+    font-family: "Share Tech", sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+.navLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+#Ho0:hover {
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+#Ho1:hover {
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+#Ho2:hover {
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+#Ho3:hover {
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.slideBar {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 520px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+.slideBarFill {
+    width: 100%;
+    height: 0%;
+    background-color: #03359d;
+    border-radius: 10px;
+    transition: height 0.1s ease;
+}
+
+h1 {
+    font-family: "Share Tech", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 100px;
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: "Share Tech", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+h3 {
+    width: 90%;
+    max-width: 800px;
+    font-family: "Share Tech", sans-serif;
+    text-align: center;
+    font-weight: light;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+p {
+    font-family: "Share Tech", sans-serif;
+    text-align: center;
+    margin-left: 30px;
+}
+
+#aboutMe {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+#skills {
+    margin-top: 1300px;
+    scroll-margin-top: 230px;
+    /* adjust this to match your navbar height */
+}
+
+
+#skillContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.skillItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.circle {
+    width: 147px;
+    height: 147px;
+    border-radius: 50%;
+    border: 13px solid lightgrey;
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    z-index: -1;
+}
+
+
+#HTML1,
+#CSS1,
+#JS1 {
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+#projects {
+    margin-top: 1200px;
+    scroll-margin-top: 120px;
+}
+
+#p1 {
+    margin-left: 50px;
+}
+
+.projectNames {
+    font-size: 25px;
+    text-align: left;
+}
+
+#ProjectKader {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #cfcfcf60;
+    background: linear-gradient(45deg, white, #03349d6a, white, #03349d6a, white);
+    border: 10px solid #03359d;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pj1 {
+    margin-left: 50px;
+    color: #03359d;
+}
+
+#imgGame {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+
+#imgGame:hover {
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+
+
+
+.sectionTitle {
+    margin-top: 400px
+}
+
+#contactBox {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    margin-top: 30px;
+    background-color: #cfcfcf60;
+    background: linear-gradient(45deg, white, #03349d6a, white, #03349d6a, white);
+    border: 10px solid #03359d;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#textc {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    #bg1 {
+        margin-top: 100px;
+    }
+
+    #bg3 {
+        margin-top: 50px;
+    }
+
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    #skillContainer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #skills {
+        margin: auto;
+        margin-top: 1250px;
+        /* kleiner dan 1220px */
+    }
+
+    #projects {
+        margin: auto;
+        margin-top: 1250px;
+        /* kleiner dan 1100px */
+    }
+
+    #ProjectKader {
+        width: 65%;
+    }
+
+    .sectionTitle {
+        margin-top: 150px;
+        margin-left: auto;
+    }
+
+    #contactBox {
+        width: 65%;
+    }
+
+    #textc {
+        margin-left: 5%;
+    }
+    #imgGame {
+        width: 90%;
+        margin-left: -5%;
+    }
+
+    .navbar {
+        font-size: small;
+        padding: 10px 15px;
+    }
+
+    .navLinks {
+        gap: 10px;
+    }
+}

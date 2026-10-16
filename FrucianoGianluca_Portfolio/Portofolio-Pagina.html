@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio van Gianluca Fruciano, student Applicatie- en Databeheer met passie voor webdesign en programmeren.">
+    <meta name="author" content="Gianluca Fruciano">
+    <meta name="keywords" content="portfolio, webdesign, HTML, CSS, JavaScript, Gianluca Fruciano">
+    <meta property="og:title" content="Portfolio - Gianluca Fruciano">
+    <meta property="og:description" content="Student Applicatie- en Databeheer met passie voor webdesign.">
+    <meta property="og:type" content="website">
+    <title>Portfolio - Gianluca Fruciano</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-container">
+        <div id="bg1" class="bg"></div>
+        <div id="bg2" class="bg flipped"></div>
+        <div id="bg3" class="bg"></div>
+        <div id="bg4" class="bg flipped"></div>
+    </div>
+
+    <nav class='navbar'>
+        <div class='logo'>PORTFOLIO</div>
+        <div class="navLinks">
+            <a id="Ho0" href="#">HOME</a>
+            <a id="Ho1" href="#skills">SKILLS</a>
+            <a id="Ho2" href="#projects">PROJECTS</a>
+            <a id="Ho3" href="#contact">CONTACT</a>
+        </div>
+    </nav>
+
+    <div class="slideBar"><div class="slideBarFill"></div></div>
+
+    <main>
+
+        <header>
+            <h1>Leerlingportfolio - <span class="blue">GIANLUCA FRUCIANO</span></h1>
+            <h2>Hallo! Welkom op mijn Portfolio Website.</h2>
+        </header>
+
+        <p id="aboutMe">
+            Ik ben Gianluca Fruciano, student Applicatie- en Databeheer in het middelbaar met een interesse in
+            programmeren en moderne webdesigns. Ik hou van clean UI's en het bouwen van simpele maar mooie websites. Buiten
+            coding speel ik graag voetbal en werk ik graag aan nieuwe ideeën en projecten.
+        </p>
+
+        <section id="skills">
+            <h2 class="sectionTitle blue">SKILLS</h2>
+            <div id="skillContainer">
+                <article class="skillItem">
+                    <div class="circle"></div>
+                    <canvas id="c1" width="200" height="200"></canvas>
+                    <p id="HTML1">HTML</p>
+                </article>
+                <article class="skillItem">
+                    <div class="circle"></div>
+                    <canvas id="c2" width="200" height="200"></canvas>
+                    <p id="CSS1">CSS</p>
+                </article>
+                <article class="skillItem">
+                    <div class="circle"></div>
+                    <canvas id="c3" width="200" height="200"></canvas>
+                    <p id="JS1">JS</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="sectionTitle blue">PROJECTS</h2>
+            <article id="ProjectKader">
+                <p class="projectNames" id="pj1">Project 1: Rythm Game</p><br>
+                <a id="p1"
+                    href="file:///C:/Users/GianlucaFruciano/OneDrive%20-%20WICO%20vzw/2025-2026/APPO/Opendeurdag/rythmgame.html"
+                    target="_blank">
+                    <img id="imgGame" src="gamePreview.png" alt="Preview van het Rythm Game project" width="500">
+                </a>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2 class="sectionTitle blue">CONTACT</h2>
+            <address id="contactBox">
+                <p id="textc">Contacteer me op deze e-mail: <a href="mailto:gianlucafruciano@leerling.wico.be">gianlucafruciano@leerling.wico.be</a></p>
+            </address>
+        </section>
+
+    </main>
+
+    <footer>
+        <p> &copy; 2025 Gianluca Fruciano</p>
+    </footer>
+
+</body>
+
+</html>
